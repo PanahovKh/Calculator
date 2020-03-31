@@ -7,30 +7,30 @@
     <title>CALCULATOR</title>
 </head>
 <body>
-    
     <div id="calculator">
         <div class="top">
-            <span class="clear">C</span>
-            <div class="screen"></div>
+            <button class = "clear" onclick="clearDisplay()">C</button>
+            <input id = "screen" type="text" value="" readonly></input>
         </div>
-        
-        <div class="keys">
-            <span>7</span>
-            <span>8</span>
-            <span>9</span>
-            <span class="operator">+</span>
-            <span>4</span>
-            <span>5</span>
-            <span>6</span>
-            <span class="operator">-</span>
-            <span>1</span>
-            <span>2</span>
-            <span>3</span>
-            <span class="operator">÷</span>
-            <span>0</span>
-            <span>.</span>
-            <span class="eval">=</span>
-            <span class="operator">x</span>
+    <div class="keys">
+                    <button class="number" onclick="insert('7')">7</button>
+                    <button class="number" onclick="insert('8')">8</button>
+                    <button class="number" onclick="insert('9')">9</button>
+                    <button class="operator" onclick="getSign('+')">+</button>
+                    <button class="number" onclick="insert('4')">4</button>
+                    <button class="number" onclick="insert('5')">5</button>
+                    <button class="number" onclick="insert('6')">6</button>
+                    <button class="operator" onclick="getSign('-')">-</button>
+                    <button class="number" onclick="insert('1')">1</button>
+                    <button class="number" onclick="insert('2')">2</button>
+                    <button class="number" onclick="insert('3')">3</button>
+                    <button class="operator" onclick="getSign('/')">÷</button>
+                    <button class="number" onclick="insert('0')">0</button>
+                    <button onclick="insert('.')">.</button>
+                    <button class="eval" onclick="checkVariables()">=</button>
+                    <button class="operator" onclick="getSign('*')">x</button>
+                </div>
+            </div>
         </div>
     </div>
     
